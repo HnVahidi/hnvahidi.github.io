@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fast Dynamic Programming in Trees in the MPC Model — abstract, paper versions and BibTeX citation.">
+  <title>Fast Dynamic Programming in Trees in the MPC Model · Hossein Vahidi</title>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <meta name="citation_title" content="Fast Dynamic Programming in Trees in the MPC Model">
+<meta name="citation_author" content="Chetan Gupta">
+<meta name="citation_author" content="Rustam Latypov">
+<meta name="citation_author" content="Yannic Maus">
+<meta name="citation_author" content="Shreyas Pai">
+<meta name="citation_author" content="Simo Särkkä">
+<meta name="citation_author" content="Jan Studený">
+<meta name="citation_author" content="Jukka Suomela">
+<meta name="citation_author" content="Jara Uitto">
+<meta name="citation_author" content="Hossein Vahidi">
+<meta name="citation_publication_date" content="2023/06/17">
+<meta name="citation_conference_title" content="SPAA 2023 - Proceedings of the 35th ACM Symposium on Parallelism in Algorithms and Architectures">
+<meta name="citation_firstpage" content="443">
+<meta name="citation_lastpage" content="453">
+<meta name="citation_doi" content="10.1145/3558481.3591098">
+<script src="../../assets/js/citation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="inner-header paper-header"><p class="eyebrow"><a href="../../">Hossein Vahidi</a></p></header><nav class="page-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../publications.html">Publications</a><a href="../../cv.html">CV</a><a href="../../location.html">Location</a></nav>
+    <main id="main"><article class="paper-page">
+  <header class="section paper-heading">
+    <p class="pub-meta">Conference paper · SPAA 2023</p>
+    <h1>Fast Dynamic Programming in Trees in the MPC Model</h1>
+    <p class="authors">Chetan Gupta, Rustam Latypov, Yannic Maus, Shreyas Pai, Simo Särkkä, Jan Studený, Jukka Suomela, Jara Uitto, and <strong>Hossein Vahidi</strong></p>
+    <p class="version-links"><a href="https://arxiv.org/abs/2305.03693">arXiv</a> <span aria-hidden="true">·</span> <a href="https://doi.org/10.1145/3558481.3591098">Conference version</a></p>
+
+  </header>
+  <section class="section abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>We present a deterministic algorithm for solving a wide range of dynamic programming problems in trees in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>D</mi><mo stretchy="false">&#x00029;</mo></mrow></math> rounds in the massively parallel computation model (MPC), with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msup><mi>n</mi><mi>&#x003B4;</mi></msup><mo stretchy="false">&#x00029;</mo></mrow></math> words of local memory per machine, for any given constant <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>&#x0003C;</mo><mi>&#x003B4;</mi><mo>&#x0003C;</mo><mn>1</mn></mrow></math>. Here <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>D</mi></mrow></math> is the diameter of the tree and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math> is the number of nodes—we emphasize that our running time is independent of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math>.</p>
+<p>Our algorithm can solve many classical graph optimization problems such as maximum weight independent set, maximum weight matching, minimum weight dominating set, and minimum weight vertex cover. It can also be used to solve many accumulation tasks in which some aggregate information is propagated upwards or downwards in the tree—this includes, for example, computing the sum, minimum, or maximum of the input labels in each subtree, as well as many inference tasks commonly solved with belief propagation. Our algorithm can also solve any locally checkable labeling problem (LCLs) in trees. Our algorithm works for any reasonable representation of the input tree; for example, the tree can be represented as a list of edges or as a string with nested parentheses or tags. The running time of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>D</mi><mo stretchy="false">&#x00029;</mo></mrow></math> rounds is also known to be necessary, assuming the widely-believed <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn></mrow></math>-cycle conjecture.</p>
+<p>Our algorithm strictly improves on two prior algorithms:</p>
+<p>(1) Bateni, Behnezhad, Derakhshan, Hajiaghayi, and Mirrokni [ICALP&#x27;18] solve problems of these flavors in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math> rounds, while our algorithm is much faster in low-diameter trees. Furthermore, their algorithm also uses randomness, while our algorithm is deterministic.</p>
+<p>(2) Balliu, Latypov, Maus, Olivetti, and Uitto [SODA&#x27;23] solve only locally checkable labeling problems in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>D</mi><mo stretchy="false">&#x00029;</mo></mrow></math> rounds, while our algorithm can be applied to a much broader family of problems.</p>
+
+  </section>
+  <section id="citation" class="section citation" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <div class="citation-actions">
+      <button type="button" id="copy-citation" hidden>Copy BibTeX</button>
+      <a href="citation.bib" download>Download .bib</a>
+      <span id="citation-status" role="status" aria-live="polite"></span>
+    </div>
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex">@inproceedings{mpc_dp_trees23,
+  author = {Chetan Gupta and Rustam Latypov and Yannic Maus and Shreyas Pai and Simo S{\&quot;a}rkk{\&quot;a} and Jan Studen{\&#x27;y} and Jukka Suomela and Jara Uitto and Hossein Vahidi},
+  title = {Fast Dynamic Programming in Trees in the {MPC} Model},
+  booktitle = {SPAA 2023 - Proceedings of the 35th ACM Symposium on Parallelism in Algorithms and Architectures},
+  year = {2023},
+  pages = {443--453},
+  publisher = {Association for Computing Machinery},
+  doi = {10.1145/3558481.3591098},
+  address = {United States},
+  day = {17},
+  language = {English},
+  month = {June}
+}
+</code></pre>
+  </section>
+</article>
+</main>
+    <footer class="footer"><span class="footer-navigation">Hossein Vahidi · <a href="../../">Home</a> · <a href="../../publications.html">Publications</a> · <a href="../../cv.html">CV</a> · <a href="../../location.html">Location</a></span><a class="footer-licenses" href="../../assets/ICON-LICENSE.txt">Licenses</a></footer>
+  </div>
+</body>
+</html>

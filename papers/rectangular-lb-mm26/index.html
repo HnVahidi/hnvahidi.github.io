@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rectangular Matrix Multiplication in the Low-Bandwidth Model — abstract, paper versions and BibTeX citation.">
+  <title>Rectangular Matrix Multiplication in the Low-Bandwidth Model · Hossein Vahidi</title>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <meta name="citation_title" content="Rectangular Matrix Multiplication in the Low-Bandwidth Model">
+<meta name="citation_author" content="Chetan Gupta">
+<meta name="citation_author" content="Jukka Suomela">
+<meta name="citation_author" content="Hossein Vahidi">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_doi" content="10.48550/arXiv.2606.04652">
+<script src="../../assets/js/citation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="inner-header paper-header"><p class="eyebrow"><a href="../../">Hossein Vahidi</a></p></header><nav class="page-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../publications.html">Publications</a><a href="../../cv.html">CV</a><a href="../../location.html">Location</a></nav>
+    <main id="main"><article class="paper-page">
+  <header class="section paper-heading">
+    <p class="pub-meta">Preprint · 2026</p>
+    <h1>Rectangular Matrix Multiplication in the Low-Bandwidth Model</h1>
+    <p class="authors">Chetan Gupta, Jukka Suomela, and <strong>Hossein Vahidi</strong></p>
+    <p class="version-links"><a href="https://arxiv.org/abs/2606.04652">arXiv</a></p>
+
+  </header>
+  <section class="section abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>We study rectangular matrix multiplication in the low-bandwidth model of distributed computing. There are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math> computers; initially the input matrices are distributed evenly between computers, and in each communication round every computer can send and receive an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>-bit message. Eventually each computer must output its designated part of the product matrix.</p>
+<p>While prior work has focused primarily on square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>&#x000D7;</mo><mi>n</mi></mrow></math> multiplication under various sparsity assumptions, we study rectangular instances with no sparsity assumption. We denote by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>a</mi><mo>&#x0002C;</mo><mi>b</mi><mo>&#x0002C;</mo><mi>c</mi><mi>&#x027E9;</mi></mrow></math> the task of multiplying an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>&#x000D7;</mo><mi>b</mi></mrow></math> matrix by a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>&#x000D7;</mo><mi>c</mi></mrow></math> matrix in this model. We concentrate on two natural aspect ratios, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mi>&#x027E9;</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mi>&#x027E9;</mi></mrow></math>, for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x02264;</mo><mi>n</mi></mrow></math>, and we study how the round complexity depends on <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi></mrow></math>.</p>
+<p>When <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x02192;</mo><mi>n</mi></mrow></math>, both <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mi>&#x027E9;</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mi>&#x027E9;</mi></mrow></math> approach <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>n</mi><mo>&#x0002C;</mo><mi>n</mi><mo>&#x0002C;</mo><mi>n</mi><mi>&#x027E9;</mi></mrow></math>, which is the usual task of multiplying square matrices. If we consider multiplication over semirings, the current best upper bound in that case is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msup><mi>n</mi><mrow><mn>4</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math> rounds, and there is a trivial unconditional lower bound of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003A9;</mi><mo stretchy="false">&#x00028;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>.</p>
+<p>We show that for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mi>&#x027E9;</mi></mrow></math>, we can achieve the complexity of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mi>O</mi><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msup><mi>d</mi><mrow><mn>4</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math>, which seems like a natural generalization of the upper bound <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mi>O</mi><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msup><mi>n</mi><mrow><mn>4</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math> when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x0003D;</mo><mi>n</mi></mrow></math>. However, the case of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mi>&#x027E9;</mi></mrow></math> is fundamentally different, and also exhibits a phase transition. We show that for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x02264;</mo><msqrt><mrow><mi>n</mi></mrow></msqrt></mrow></math>, the complexity of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x027E8;</mi><mi>n</mi><mo>&#x0002C;</mo><mi>d</mi><mo>&#x0002C;</mo><mi>n</mi><mi>&#x027E9;</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00398;</mi><mo stretchy="false">&#x00028;</mo><mi>d</mi><msqrt><mrow><mi>n</mi></mrow></msqrt><mo stretchy="false">&#x00029;</mo></mrow></math>; we have matching upper and lower bounds. However, the behavior is genuinely different in the region <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x02265;</mo><msqrt><mrow><mi>n</mi></mrow></msqrt></mrow></math>, where the upper bound is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msup><mi>d</mi><mrow><mn>2</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup><msup><mi>n</mi><mrow><mn>2</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math>.</p>
+
+  </section>
+  <section id="citation" class="section citation" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <div class="citation-actions">
+      <button type="button" id="copy-citation" hidden>Copy BibTeX</button>
+      <a href="citation.bib" download>Download .bib</a>
+      <span id="citation-status" role="status" aria-live="polite"></span>
+    </div>
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex">@misc{rectangular-lb-mm26,
+  author = {Gupta, Chetan and Suomela, Jukka and Vahidi, Hossein},
+  title = {Rectangular Matrix Multiplication in the Low-Bandwidth Model},
+  year = {2026},
+  doi = {10.48550/arXiv.2606.04652},
+  url = {https://arxiv.org/abs/2606.04652},
+  archiveprefix = {arXiv},
+  eprint = {2606.04652},
+  month = {June},
+  primaryclass = {cs.DC}
+}
+</code></pre>
+  </section>
+</article>
+</main>
+    <footer class="footer"><span class="footer-navigation">Hossein Vahidi · <a href="../../">Home</a> · <a href="../../publications.html">Publications</a> · <a href="../../cv.html">CV</a> · <a href="../../location.html">Location</a></span><a class="footer-licenses" href="../../assets/ICON-LICENSE.txt">Licenses</a></footer>
+  </div>
+</body>
+</html>

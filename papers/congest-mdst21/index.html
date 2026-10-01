@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Approximate Minimum Directed Spanning Trees Under Congestion — abstract, paper versions and BibTeX citation.">
+  <title>Approximate Minimum Directed Spanning Trees Under Congestion · Hossein Vahidi</title>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <meta name="citation_title" content="Approximate Minimum Directed Spanning Trees Under Congestion">
+<meta name="citation_author" content="Christoph Lenzen">
+<meta name="citation_author" content="Hossein Vahidi">
+<meta name="citation_publication_date" content="2021">
+<meta name="citation_conference_title" content="Structural Information and Communication Complexity: 28th International Colloquium, SIROCCO 2021, Wrocław, Poland, June 28 – July 1, 2021, Proceedings">
+<meta name="citation_isbn" content="978-3-030-79526-9">
+<meta name="citation_firstpage" content="352">
+<meta name="citation_lastpage" content="369">
+<meta name="citation_doi" content="10.1007/978-3-030-79527-6_20">
+<script src="../../assets/js/citation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="inner-header paper-header"><p class="eyebrow"><a href="../../">Hossein Vahidi</a></p></header><nav class="page-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../publications.html">Publications</a><a href="../../cv.html">CV</a><a href="../../location.html">Location</a></nav>
+    <main id="main"><article class="paper-page">
+  <header class="section paper-heading">
+    <p class="pub-meta">Conference paper · SIROCCO 2021</p>
+    <h1>Approximate Minimum Directed Spanning Trees Under Congestion</h1>
+    <p class="authors">Christoph Lenzen and <strong>Hossein Vahidi</strong></p>
+    <p class="version-links"><a href="https://doi.org/10.1007/978-3-030-79527-6_20">Conference version</a></p>
+
+  </header>
+  <section class="section abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>The minimum directed spanning tree (MDST) problem has until recently not been studied in distributed computing models. This fundamental task generalizes the well-studied minimum spanning tree problem, by asking for a minimum weight spanning tree rooted at some specified node of a directed network. In their DISC 2019 paper [9], Fischer and Oshman reduce the MDST problem to the single-source shortest path (SSSP) problem, with a polylogarithmic increase in running time. This holds both in the Congest and Congested Clique models. Fischer and Oshman further suggest the possibility that an approximate SSSP algorithm could be leveraged in computing an approximate MDST. We extend their analysis to show that this is indeed the case: For <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B5;</mi><mo>&#x0003E;</mo><mn>0</mn></mrow></math>, using a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>&#x003B5;</mi><mo stretchy="false">&#x00029;</mo></mrow></math>-approximation to SSSP running in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math> rounds we can compute a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>&#x003B5;</mi><mo stretchy="false">&#x00029;</mo></mrow></math>-approximate MDST in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><mi>R</mi><mo stretchy="false">&#x00029;</mo></mrow></math> rounds (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover></mrow></math>-notation neglects polylogarithmic factors in the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math> of nodes in the graph.). In particular, this implies the following improvements in the state of the art for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x0002B;</mo><mi>o</mi><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo><mo stretchy="false">&#x00029;</mo></mrow></math>-approximation of MDST.</p>
+<p>An <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002F;</mo><mi>&#x003C9;</mi><mo>&#x0002B;</mo><mi>o</mi><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo></mrow></msup><mo stretchy="false">&#x00029;</mo><mo>&#x02282;</mo><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msup><mi>n</mi><mrow><mn>0.158</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math>-round Congested Clique algorithm, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003C9;</mi><mo>&#x0003C;</mo><mn>2.373</mn></mrow></math> is the fast matrix multiplication exponent [3].</p>
+<p>An <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msup><mi>&#x003BB;</mi><mn>2</mn></msup><mo stretchy="false">&#x00029;</mo></mrow></math>-round Congested Clique algorithm in graphs where each edge has an at most factor <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003BB;</mi><mo>&#x02265;</mo><mn>1</mn></mrow></math> heavier reverse edge [1].</p>
+<p>An <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msup><mi>&#x003BB;</mi><mn>2</mn></msup><mo stretchy="false">&#x00028;</mo><msqrt><mrow><mi>n</mi></mrow></msqrt><mo>&#x0002B;</mo><mi>D</mi><mo stretchy="false">&#x00029;</mo><mo stretchy="false">&#x00029;</mo></mrow></math>-round Congest algorithm in the same family of graphs [1]. For <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003BB;</mi><mo>&#x02208;</mo><msup><mi>log</mi><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo></mrow></msup><mi>n</mi></mrow></math>, the resulting running time of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>O</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover><mo stretchy="false">&#x00028;</mo><msqrt><mrow><mi>n</mi></mrow></msqrt><mo>&#x0002B;</mo><mi>D</mi><mo stretchy="false">&#x00029;</mo></mrow></math> is unconditionally tight up to a polylogarithmic factor [21].</p>
+    <aside class="section-note abstract-reference-note" aria-label="Abstract reference note"><p>Reference numbers in this abstract refer to the bibliography of the full paper linked above.</p></aside>
+  </section>
+  <section id="citation" class="section citation" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <div class="citation-actions">
+      <button type="button" id="copy-citation" hidden>Copy BibTeX</button>
+      <a href="citation.bib" download>Download .bib</a>
+      <span id="citation-status" role="status" aria-live="polite"></span>
+    </div>
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex">@inproceedings{congest-mdst21,
+  author = {Lenzen, Christoph and Vahidi, Hossein},
+  title = {Approximate Minimum Directed Spanning Trees Under Congestion},
+  booktitle = {Structural Information and Communication Complexity: 28th International Colloquium, SIROCCO 2021, Wroc\l{}aw, Poland, June 28 – July 1, 2021, Proceedings},
+  year = {2021},
+  pages = {352--369},
+  publisher = {Springer International Publishing},
+  doi = {10.1007/978-3-030-79527-6_20},
+  isbn = {978-3-030-79526-9},
+  numpages = {18}
+}
+</code></pre>
+  </section>
+</article>
+</main>
+    <footer class="footer"><span class="footer-navigation">Hossein Vahidi · <a href="../../">Home</a> · <a href="../../publications.html">Publications</a> · <a href="../../cv.html">CV</a> · <a href="../../location.html">Location</a></span><a class="footer-licenses" href="../../assets/ICON-LICENSE.txt">Licenses</a></footer>
+  </div>
+</body>
+</html>

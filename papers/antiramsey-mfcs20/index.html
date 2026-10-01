@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complexity of Computing the Anti-Ramsey Numbers for Paths — abstract, paper versions and BibTeX citation.">
+  <title>Complexity of Computing the Anti-Ramsey Numbers for Paths · Hossein Vahidi</title>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <meta name="citation_title" content="Complexity of Computing the Anti-Ramsey Numbers for Paths">
+<meta name="citation_author" content="Saeed Akhoondian Amiri">
+<meta name="citation_author" content="Alexandru Popa">
+<meta name="citation_author" content="Mohammad Roghani">
+<meta name="citation_author" content="Golnoosh Shahkarami">
+<meta name="citation_author" content="Reza Soltani">
+<meta name="citation_author" content="Hossein Vahidi">
+<meta name="citation_publication_date" content="2020">
+<meta name="citation_conference_title" content="45th International Symposium on Mathematical Foundations of Computer Science (MFCS 2020)">
+<meta name="citation_volume" content="170">
+<meta name="citation_issn" content="1868-8969">
+<meta name="citation_isbn" content="978-3-95977-159-7">
+<meta name="citation_firstpage" content="6:1">
+<meta name="citation_lastpage" content="6:14">
+<meta name="citation_doi" content="10.4230/LIPIcs.MFCS.2020.6">
+<script src="../../assets/js/citation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="inner-header paper-header"><p class="eyebrow"><a href="../../">Hossein Vahidi</a></p></header><nav class="page-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../publications.html">Publications</a><a href="../../cv.html">CV</a><a href="../../location.html">Location</a></nav>
+    <main id="main"><article class="paper-page">
+  <header class="section paper-heading">
+    <p class="pub-meta">Conference paper · MFCS 2020</p>
+    <h1>Complexity of Computing the Anti-Ramsey Numbers for Paths</h1>
+    <p class="authors">Saeed Akhoondian Amiri, Alexandru Popa, Mohammad Roghani, Golnoosh Shahkarami, Reza Soltani, and <strong>Hossein Vahidi</strong></p>
+    <p class="version-links"><a href="https://arxiv.org/abs/1810.08004">arXiv</a> <span aria-hidden="true">·</span> <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.MFCS.2020.6">Conference version</a> <span aria-hidden="true">·</span> <a href="https://doi.org/10.1016/j.tcs.2025.115271">Journal version</a></p>
+
+  </header>
+  <section class="section abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>The anti-Ramsey numbers are a fundamental notion in graph theory, introduced in 1978, by Erdös, Simonovits and Sós. For given graphs <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>G</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi></mrow></math> the anti-Ramsey number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>ar</mo><mo stretchy="false">&#x00028;</mo><mi>G</mi><mo>&#x0002C;</mo><mi>H</mi><mo stretchy="false">&#x00029;</mo></mrow></math> is defined to be the maximum number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math> such that there exists an assignment of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math> colors to the edges of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>G</mi></mrow></math> in which every copy of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi></mrow></math> in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>G</mi></mrow></math> has at least two edges with the same color.</p>
+<p>Usually, combinatorists study extremal values of anti-Ramsey numbers for various classes of graphs. There are works on the computational complexity of the problem when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi></mrow></math> is a star. Along this line of research, we study the complexity of computing the anti-Ramsey number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>ar</mo><mo stretchy="false">&#x00028;</mo><mi>G</mi><mo>&#x0002C;</mo><msub><mi>P</mi><mi>k</mi></msub><mo stretchy="false">&#x00029;</mo></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>P</mi><mi>k</mi></msub></mrow></math> is a path of length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math>. First, we observe that when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math> is close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math>, the problem is hard; hence, the challenging part is the computational complexity of the problem when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math> is a fixed constant.</p>
+<p>We provide a characterization of the problem for paths of constant length. Our first main contribution is to prove that computing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>ar</mo><mo stretchy="false">&#x00028;</mo><mi>G</mi><mo>&#x0002C;</mo><msub><mi>P</mi><mi>k</mi></msub><mo stretchy="false">&#x00029;</mo></mrow></math> for every integer <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi><mo>&#x0003E;</mo><mn>2</mn></mrow></math> is NP-hard. We obtain this by providing several structural properties of such coloring in graphs. We investigate further and show that approximating <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>ar</mo><mo stretchy="false">&#x00028;</mo><mi>G</mi><mo>&#x0002C;</mo><msub><mi>P</mi><mn>3</mn></msub><mo stretchy="false">&#x00029;</mo></mrow></math> to a factor of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mrow><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn><mo>&#x02212;</mo><mi>&#x003F5;</mi></mrow></msup></mrow></math> is hard already in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn></mrow></math>-partite graphs, unless <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo>&#x0003D;</mo><mi>N</mi><mi>P</mi></mrow></math>. We also study the exact complexity of the precolored version and show that there is no subexponential algorithm for the problem unless ETH fails for any fixed constant <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math>.</p>
+<p>Given the hardness of approximation and parametrization of the problem, it is natural to study the problem on restricted graph families. Along this line, we first introduce the notion of color connected coloring, and, employing this structural property, we obtain a linear time algorithm to compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>ar</mo><mo stretchy="false">&#x00028;</mo><mi>G</mi><mo>&#x0002C;</mo><msub><mi>P</mi><mi>k</mi></msub><mo stretchy="false">&#x00029;</mo></mrow></math>, for every integer <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi></mrow></math>, when the host graph, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>G</mi></mrow></math>, is a tree.</p>
+
+  </section>
+  <section id="citation" class="section citation" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <div class="citation-actions">
+      <button type="button" id="copy-citation" hidden>Copy BibTeX</button>
+      <a href="citation.bib" download>Download .bib</a>
+      <span id="citation-status" role="status" aria-live="polite"></span>
+    </div>
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex">@inproceedings{antiramsey-mfcs20,
+  author = {Akhoondian Amiri, Saeed and Popa, Alexandru and Roghani, Mohammad and Shahkarami, Golnoosh and Soltani, Reza and Vahidi, Hossein},
+  title = {{Complexity of Computing the Anti-Ramsey Numbers for Paths}},
+  booktitle = {45th International Symposium on Mathematical Foundations of Computer Science (MFCS 2020)},
+  year = {2020},
+  volume = {170},
+  pages = {6:1--6:14},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\&quot;u}r Informatik},
+  doi = {10.4230/LIPIcs.MFCS.2020.6},
+  url = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.MFCS.2020.6},
+  address = {Dagstuhl, Germany},
+  editor = {Esparza, Javier and Kr\&#x27;{a}l&#x27;, Daniel},
+  isbn = {978-3-95977-159-7},
+  issn = {1868-8969},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  urn = {urn:nbn:de:0030-drops-126781}
+}
+</code></pre>
+  </section>
+</article>
+</main>
+    <footer class="footer"><span class="footer-navigation">Hossein Vahidi · <a href="../../">Home</a> · <a href="../../publications.html">Publications</a> · <a href="../../cv.html">CV</a> · <a href="../../location.html">Location</a></span><a class="footer-licenses" href="../../assets/ICON-LICENSE.txt">Licenses</a></footer>
+  </div>
+</body>
+</html>

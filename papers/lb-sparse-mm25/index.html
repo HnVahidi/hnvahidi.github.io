@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Low-Bandwidth Matrix Multiplication: Faster Algorithms and More General Forms of Sparsity — abstract, paper versions and BibTeX citation.">
+  <title>Low-Bandwidth Matrix Multiplication: Faster Algorithms and More General Forms of Sparsity · Hossein Vahidi</title>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <meta name="citation_title" content="Low-Bandwidth Matrix Multiplication: Faster Algorithms and More General Forms of Sparsity">
+<meta name="citation_author" content="Chetan Gupta">
+<meta name="citation_author" content="Janne H. Korhonen">
+<meta name="citation_author" content="Jan Studený">
+<meta name="citation_author" content="Jukka Suomela">
+<meta name="citation_author" content="Hossein Vahidi">
+<meta name="citation_publication_date" content="2025">
+<meta name="citation_conference_title" content="Structural Information and Communication Complexity: 32nd International Colloquium, SIROCCO 2025, Delphi, Greece, June 2–4, 2025, Proceedings">
+<meta name="citation_isbn" content="978-3-031-91735-6">
+<meta name="citation_firstpage" content="333">
+<meta name="citation_lastpage" content="349">
+<meta name="citation_doi" content="10.1007/978-3-031-91736-3_20">
+<script src="../../assets/js/citation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="inner-header paper-header"><p class="eyebrow"><a href="../../">Hossein Vahidi</a></p></header><nav class="page-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../publications.html">Publications</a><a href="../../cv.html">CV</a><a href="../../location.html">Location</a></nav>
+    <main id="main"><article class="paper-page">
+  <header class="section paper-heading">
+    <p class="pub-meta">Conference paper · SIROCCO 2025</p>
+    <h1>Low-Bandwidth Matrix Multiplication: Faster Algorithms and More General Forms of Sparsity</h1>
+    <p class="authors">Chetan Gupta, Janne H. Korhonen, Jan Studený, Jukka Suomela, and <strong>Hossein Vahidi</strong></p>
+    <p class="version-links"><a href="https://arxiv.org/abs/2404.15559">arXiv</a> <span aria-hidden="true">·</span> <a href="https://doi.org/10.1007/978-3-031-91736-3_20">Conference version</a></p>
+
+  </header>
+  <section class="section abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>In prior work, Gupta et al. (SPAA 2022) presented a distributed algorithm for multiplying sparse <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>&#x000D7;</mo><mi>n</mi></mrow></math> matrices, using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math> computers. They assumed that the input matrices are uniformly sparse—there are at most <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi></mrow></math> non-zeros in each row and column—and the task is to compute a uniformly sparse part of the product matrix. The sparsity structure is globally known in advance (this is the supported setting).</p>
+<p>As input, each computer receives one row of each input matrix, and each computer needs to output one row of the product matrix. In each communication round each computer can send and receive one <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>-bit message. Their algorithm solves this task in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msup><mi>d</mi><mrow><mn>1.907</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math> rounds, while the trivial bound is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msup><mi>d</mi><mn>2</mn></msup><mo stretchy="false">&#x00029;</mo></mrow></math>. We improve on the prior work in two dimensions: First, we show that we can solve the same task faster, in only <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msup><mi>d</mi><mrow><mn>1.832</mn></mrow></msup><mo stretchy="false">&#x00029;</mo></mrow></math> rounds.</p>
+<p>Second, we explore what happens when matrices are not uniformly sparse. We consider the following alternative notions of sparsity: row-sparse matrices (at most <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi></mrow></math> non-zeros per row), column-sparse matrices, matrices with bounded degeneracy (we can recursively delete a row or column with at most <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi></mrow></math> non-zeros), average-sparse matrices (at most <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mi>n</mi></mrow></math> non-zeros in total), and general matrices.</p>
+<p>We present a near-complete classification of the complexity of matrix multiplication in the above setting for all combinations of these notions of sparsity.</p>
+
+  </section>
+  <section id="citation" class="section citation" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <div class="citation-actions">
+      <button type="button" id="copy-citation" hidden>Copy BibTeX</button>
+      <a href="citation.bib" download>Download .bib</a>
+      <span id="citation-status" role="status" aria-live="polite"></span>
+    </div>
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex">@inproceedings{lb-sparse-mm25,
+  author = {Gupta, Chetan and Korhonen, Janne H. and Studen\&#x27;{y}, Jan and Suomela, Jukka and Vahidi, Hossein},
+  title = {Low-Bandwidth Matrix Multiplication: Faster Algorithms and More General Forms of Sparsity},
+  booktitle = {Structural Information and Communication Complexity: 32nd International Colloquium, SIROCCO 2025, Delphi, Greece, June 2–4, 2025, Proceedings},
+  year = {2025},
+  pages = {333--349},
+  publisher = {Springer Nature Switzerland},
+  doi = {10.1007/978-3-031-91736-3_20},
+  isbn = {978-3-031-91735-6},
+  location = {Delphi, Greece},
+  numpages = {17}
+}
+</code></pre>
+  </section>
+</article>
+</main>
+    <footer class="footer"><span class="footer-navigation">Hossein Vahidi · <a href="../../">Home</a> · <a href="../../publications.html">Publications</a> · <a href="../../cv.html">CV</a> · <a href="../../location.html">Location</a></span><a class="footer-licenses" href="../../assets/ICON-LICENSE.txt">Licenses</a></footer>
+  </div>
+</body>
+</html>
