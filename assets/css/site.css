@@ -133,6 +133,8 @@ h3 { margin-bottom: 8px; color: #425b66; font-size: 15px; font-weight: 700; lett
 .publication p { margin-bottom: 0; }
 .authors { color: #263e4a; font-size: 15px; line-height: 1.52; }
 .authors strong { color: var(--ink); font-weight: 700; }
+.authors .coauthor-link { color: inherit; text-decoration-color: #a3afb5; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.authors .coauthor-link:hover { color: inherit; text-decoration-color: currentColor; }
 .pub-meta { margin-top: 4px; color: var(--muted); font-size: 14px; }
 .version-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 9px; margin: 3px 0 0; font-size: 14px; }
 .version-links a { display: inline-flex; align-items: center; min-height: 32px; padding: 3px 0; white-space: nowrap; }
@@ -152,10 +154,12 @@ h3 { margin-bottom: 8px; color: #425b66; font-size: 15px; font-weight: 700; lett
 .page-intro p:last-child { margin-bottom: 0; }
 .paper-detail { position: relative; }
 .paper-detail h2 { font-family: inherit; font-size: 1.4rem; line-height: 1.4; letter-spacing: -.01em; }
-.paper-summary-card { display: block; margin-bottom: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 5px; background: #f8fbfb; color: var(--ink); text-decoration: none; }
+.paper-summary-card { position: relative; display: block; margin-bottom: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 5px; background: #f8fbfb; color: var(--ink); }
+.paper-title-link::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 5px; }
+.paper-summary-card .coauthor-link { position: relative; z-index: 2; }
 .paper-summary-card h2, .paper-summary-action { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-.paper-summary-card:is(:hover, :focus-visible) { color: var(--ink); border-color: var(--link); background: #edf5f6; }
-.paper-summary-card:is(:hover, :focus-visible) h2, .paper-summary-card:is(:hover, :focus-visible) .paper-summary-action { text-decoration-thickness: 2px; }
+.paper-summary-card:is(:hover, :focus-within) { color: var(--ink); border-color: var(--link); background: #edf5f6; }
+.paper-summary-card:is(:hover, :focus-within) h2, .paper-summary-card:is(:hover, :focus-within) .paper-summary-action { text-decoration-thickness: 2px; }
 .paper-summary-action { font-size: 14px; font-weight: 600; }
 .paper-abstract-preview {
   max-width: 75ch;
