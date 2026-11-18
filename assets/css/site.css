@@ -130,8 +130,21 @@ h3 { margin-bottom: 8px; color: #425b66; font-size: 15px; font-weight: 700; lett
 .publication-list, .simple-list, .service-list { margin: 0; padding: 0; list-style: none; }
 .publication { padding: 16px 0 18px; border-top: 1px solid var(--line); }
 .publication h4 { margin-bottom: 5px; font-size: 17px; font-weight: 650; line-height: 1.42; }
-.formalization-badge { display: inline-block; margin-inline-start: .2rem; vertical-align: middle; line-height: 0; }
-.formalization-badge img { display: block; width: 7rem; max-width: 100%; height: auto; }
+.paper-title-row {
+  --badge-width: clamp(5rem, 14vw, 5.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--badge-width);
+  align-items: first baseline;
+  column-gap: clamp(.65rem, 2vw, 1.25rem);
+}
+.paper-title-row > :is(h1, h2, h4) { overflow-wrap: anywhere; }
+.formalization-badge { font-size: 0; line-height: 0; }
+.formalization-badge img {
+  width: var(--badge-width);
+  height: auto;
+  /* The first text baseline in the 134 × 56 artwork sits 34 units above its bottom edge. */
+  vertical-align: calc(var(--badge-width) * -34 / 134);
+}
 .publication p { margin-bottom: 0; }
 .authors { color: #263e4a; font-size: 15px; line-height: 1.52; }
 .authors strong { color: var(--ink); font-weight: 700; }
@@ -236,6 +249,16 @@ address { margin-bottom: 20px; font-style: normal; font-size: 18px; }
 }
 
 @media (max-width: 620px) {
+  .paper-title-row { grid-template-columns: minmax(0, 1fr); }
+  .paper-title-row > * { grid-area: 1 / 1; }
+  .paper-title-row .formalization-badge { justify-self: end; }
+  /* Reserve only the first lines for the badge so longer titles can wrap underneath. */
+  .paper-title-row > :is(h1, h2, h4)::before {
+    content: "";
+    float: right;
+    width: calc(var(--badge-width) + .65rem);
+    height: calc(1lh + var(--badge-width) * 34 / 134);
+  }
   .hero { display: block; }
   .portrait-figure { margin-top: 24px; }
   .profile-links { margin-top: 24px; }
