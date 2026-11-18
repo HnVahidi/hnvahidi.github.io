@@ -130,6 +130,8 @@ h3 { margin-bottom: 8px; color: #425b66; font-size: 15px; font-weight: 700; lett
 .publication-list, .simple-list, .service-list { margin: 0; padding: 0; list-style: none; }
 .publication { padding: 16px 0 18px; border-top: 1px solid var(--line); }
 .publication h4 { margin-bottom: 5px; font-size: 17px; font-weight: 650; line-height: 1.42; }
+.formalization-badge { display: inline-block; margin-inline-start: .2rem; vertical-align: middle; line-height: 0; }
+.formalization-badge img { display: block; width: 7rem; max-width: 100%; height: auto; }
 .publication p { margin-bottom: 0; }
 .authors { color: #263e4a; font-size: 15px; line-height: 1.52; }
 .authors strong { color: var(--ink); font-weight: 700; }
@@ -156,7 +158,7 @@ h3 { margin-bottom: 8px; color: #425b66; font-size: 15px; font-weight: 700; lett
 .paper-detail h2 { font-family: inherit; font-size: 1.4rem; line-height: 1.4; letter-spacing: -.01em; }
 .paper-summary-card { position: relative; display: block; margin-bottom: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 5px; background: #f8fbfb; color: var(--ink); }
 .paper-title-link::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 5px; }
-.paper-summary-card .coauthor-link { position: relative; z-index: 2; }
+.paper-summary-card :is(.coauthor-link, .formalization-badge) { position: relative; z-index: 2; }
 .paper-summary-card h2, .paper-summary-action { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .paper-summary-card:is(:hover, :focus-within) { color: var(--ink); border-color: var(--link); background: #edf5f6; }
 .paper-summary-card:is(:hover, :focus-within) h2, .paper-summary-card:is(:hover, :focus-within) .paper-summary-action { text-decoration-thickness: 2px; }
