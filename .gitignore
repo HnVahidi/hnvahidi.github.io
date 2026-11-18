@@ -17,6 +17,8 @@
 /papers/antiramsey20/*
 !/papers/congest-mdst21/
 /papers/congest-mdst21/*
+!/papers/lb-sparse-mm-exponent26/
+/papers/lb-sparse-mm-exponent26/*
 !/papers/lb-sparse-mm-spaa24/
 /papers/lb-sparse-mm-spaa24/*
 !/papers/lb-sparse-mm25/
@@ -47,6 +49,8 @@
 !/papers/antiramsey20/index.html
 !/papers/congest-mdst21/citation.bib
 !/papers/congest-mdst21/index.html
+!/papers/lb-sparse-mm-exponent26/citation.bib
+!/papers/lb-sparse-mm-exponent26/index.html
 !/papers/lb-sparse-mm-spaa24/citation.bib
 !/papers/lb-sparse-mm-spaa24/index.html
 !/papers/lb-sparse-mm25/citation.bib
